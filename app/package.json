@@ -8,7 +8,7 @@
   "scripts": {
     "serve": "webpack-dev-server src/app.tsx --progress --colors --watch --mode development",
     "format:lint": "tslint -c tslint.json -p tsconfig.json --fix",
-    "format:prettier": "prettier --write '**/*.ts'",
+    "format:prettier": "prettier --write 'src/**/*.tsx'",
     "clean": "rm -rf dist",
     "build": "webpack src/app.tsx -p --env.production"
   },
