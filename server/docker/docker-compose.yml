@@ -1,0 +1,15 @@
+version: '2'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: fresa_mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=p4ss
+      - MYSQL_DATABASE=flowable
+      - MYSQL_USER=flowable
+      - MYSQL_PASSWORD=flowable
+    ports:
+      - 3306:3306
+    volumes:
+      - ~/tmp/fresa-mysql:/var/lib/mysql
